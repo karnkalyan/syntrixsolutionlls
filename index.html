@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syntrix Solutions LLC</title>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "chart.js": "https://aistudiocdn.com/chart.js@^4.5.1",
+    "react-chartjs-2": "https://aistudiocdn.com/react-chartjs-2@^5.3.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.546.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
+  }
+}
+</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom styles for infinite scroll animation */
+      @keyframes infinite-scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+      .animate-infinite-scroll {
+        animation: infinite-scroll 40s linear infinite;
+      }
+      /* Styles for printing invoices */
+      @media print {
+        @page {
+          size: A4 landscape;
+          margin: 0;
+        }
+        body * {
+          visibility: hidden;
+        }
+        #invoice-to-print, #invoice-to-print * {
+          visibility: visible;
+        }
+        #invoice-to-print {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .no-print {
+          display: none !important;
+        }
+      }
+      /* Gradient text for hero and stats */
+      .animated-gradient-text {
+        background: linear-gradient(90deg, #EF233C, #F98829, #EF233C);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 4s linear infinite;
+      }
+      @keyframes gradient-animation {
+        to {
+          background-position: 200% center;
+        }
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
