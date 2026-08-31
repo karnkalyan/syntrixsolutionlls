@@ -35,8 +35,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
     const login = (email: string, pass: string) => {
         const normalizedEmail = email.trim().toLowerCase();
-        if ((normalizedEmail === 'support@syntrixsolutionsllc.com' || normalizedEmail === 'admin@syntrixsolutionsllc.com' || normalizedEmail === 'admin@syntrixsolution.com' || normalizedEmail === 'admin@kashvi.tech') && pass === 'password') {
-            const userData: User = { id: 'admin1', name: 'Admin User', email: 'support@syntrixsolutionsllc.com' };
+        if ((normalizedEmail === 'syntrixsolutionsllc@gmail.com' || normalizedEmail === 'admin@syntrixsolutionsllc.com' || normalizedEmail === 'admin@syntrixsolution.com' || normalizedEmail === 'admin@kashvi.tech') && pass === 'password') {
+            const userData: User = { id: 'admin1', name: 'Admin User', email: 'syntrixsolutionsllc@gmail.com' };
             localStorage.setItem('authUser', JSON.stringify(userData));
             setUser(userData);
             return true;

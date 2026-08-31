@@ -43,7 +43,7 @@ const ContactPage: React.FC = () => {
                   <Mail className="h-8 w-8 text-red-500 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-lg">Email Us</h4>
-                    <a href="mailto:support@syntrixsolutionsllc.com" className="text-gray-600 hover:text-red-500 font-medium">support@syntrixsolutionsllc.com</a>
+                    <a href="mailto:syntrixsolutionsllc@gmail.com" className="text-gray-600 hover:text-red-500 font-medium">syntrixsolutionsllc@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex items-start">

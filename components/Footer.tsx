@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
              <address className="not-italic text-white/70 space-y-3">
                 <p>1001 Hensley St Ste H, Richmond, California 94801</p>
                 <p><a href="tel:+15108507000" className="hover:text-white transition-colors">+1 (510) 850-7000</a></p>
-                <p><a href="mailto:support@syntrixsolutionsllc.com" className="hover:text-white transition-colors">support@syntrixsolutionsllc.com</a></p>
+                <p><a href="mailto:syntrixsolutionsllc@gmail.com" className="hover:text-white transition-colors">syntrixsolutionsllc@gmail.com</a></p>
              </address>
           </div>
 
