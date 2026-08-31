@@ -55,9 +55,9 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
       <div className={`hidden md:block transition-colors duration-300 ${isScrolled || isMenuOpen ? 'bg-gray-100/80' : 'bg-white/10'}`}>
         <div className="container mx-auto px-6 py-2 flex justify-between items-center text-sm">
             <div className={`flex items-center space-x-4 ${topBarTextColor}`}>
-                <a href="mailto:support@syntrixsolutionsllc.com" className="flex items-center space-x-2 hover:text-[#D52036] transition-colors">
+                <a href="mailto:syntrixsolutionsllc@gmail.com" className="flex items-center space-x-2 hover:text-[#D52036] transition-colors">
                     <Mail className="h-4 w-4" />
-                    <span>support@syntrixsolutionsllc.com</span>
+                    <span>syntrixsolutionsllc@gmail.com</span>
                 </a>
                 <a href="tel:+15108507000" className="flex items-center space-x-2 hover:text-[#D52036] transition-colors">
                     <Phone className="h-4 w-4" />
